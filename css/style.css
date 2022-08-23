@@ -1,0 +1,601 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: inherit;
+}
+
+ul[class],
+ol[class] {
+    padding: 0;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol,
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+    margin: 0;
+    font-size: inherit;
+}
+
+ul[class] {
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+body {
+    font-family: "Open Sans", sans-serif;
+}
+
+.container {
+    max-width: 1240px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.header {
+    background-image: url(../img/apples.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-height: 700px;
+    color: #fff;
+}
+
+.header__top {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 35px;
+}
+
+.header__logo-text {
+    font-size: 14px;
+    letter-spacing: 3px;
+}
+
+.header__menu-list {
+    display: flex;
+    justify-content: center;
+    font-size: 14px;
+}
+
+.header__menu-list--link {
+    padding-right: 50px;
+    transition: all 0.5s;
+}
+
+.header__menu-list--link:hover {
+    color: aqua;
+}
+
+.header__menu-list--link---right {
+    padding-right: 0;
+}
+
+.header__center-bottom {
+    text-align: center;
+    margin-top: 170px;
+    padding-bottom: 100px;
+}
+
+.header__title {
+    font-size: 48px;
+    font-weight: 100;
+    letter-spacing: 15px;
+}
+
+.header__title-span {
+    font-size: 72px;
+    font-weight: 100;
+}
+
+.header__title-text {
+    font-size: 14px;
+}
+
+.header__button {
+    width: 220px;
+    height: 40px;
+    color: #fff;
+    font-size: 14px;
+    border: 2px solid #fff;
+    background-color: rgba(0, 0, 0, 0.4);
+    margin-top: 155px;
+    transition: all 0.5s;
+}
+
+.header__button:hover {
+    color: aqua;
+    width: 350px;
+    border: 2px solid aqua;
+    border-radius: 50%;
+}
+
+.main__text {
+    display: flex;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.main__text-left {
+    width: 1550px;
+    font-size: 22px;
+    font-weight: 400;
+}
+
+.main__text-left--span,
+.main__blog-title--span,
+.main__email-title--span {
+    font-weight: 700;
+}
+
+.main__text-right {
+    font-size: 14px;
+    margin-left: 140px;
+}
+
+.main__inner {
+    background-color: #f3f3f3;
+}
+
+.main__blog {
+    text-align: center;
+    padding-top: 140px;
+    padding-bottom: 45px;
+}
+
+.main__blog-title {
+    font-size: 24px;
+    padding-bottom: 70px;
+    font-weight: 400;
+}
+
+.main__blog-item {
+    display: flex;
+    padding-bottom: 15px;
+}
+
+.main__blog-box--img {
+    position: relative;
+    width: 60%;
+}
+
+.main__blog-img {
+    height: 300px;
+}
+
+.main__blog-img--text {
+    position: absolute;
+    bottom: 10px;
+    left: 20px;
+    font-size: 14px;
+    color: #fff;
+}
+
+.main__blog-img--likes {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    color: white;
+    padding: 5px 10px;
+    border: 2px solid #fff;
+    background-color: rgba(0, 0, 0, 0.5);
+    font-size: 14px;
+}
+
+.main__blog-img {
+    box-shadow: inset 0 0 50px 10px rgba(0, 0, 0, 0.3);
+    width: 100%;
+    height: 300px;
+    background: url(../img/sample.jpg) 0 0 no-repeat;
+}
+
+.main__blog-img-right {
+    background: url(../img/sample1.jpg) 0 0 no-repeat;
+}
+
+.main__blog-box--text {
+    width: 40%;
+    font-size: 14px;
+    margin: 10% 0;
+}
+
+.main__email {
+    display: flex;
+    justify-content: start;
+    margin-top: 30px;
+    padding: 40px 20px;
+    background-color: #fff;
+}
+
+.main__email-title {
+    font-size: 23px;
+    padding-top: 10px;
+    min-width: 310px;
+}
+
+.main__email-form {
+    display: flex;
+    width: 76%;
+    margin-left: 15px;
+}
+
+.main__email-form-input {
+    width: 100%;
+    height: 50px;
+    font-size: 14px;
+    outline: none;
+    border: none;
+    border: 2px solid #000;
+    background-color: #e8e8e8;
+}
+
+.main__email-form-input::placeholder {
+    color: #000;
+    padding-left: 10px;
+}
+
+.main__email-form-button {
+    font-size: 14px;
+    width: 110px;
+    height: 50px;
+    color: #fff;
+    background-color: #343638;
+    border: none;
+    transition: all 0.5s;
+}
+
+.main__email-form-button:hover {
+    background-color: #fff;
+    color: #343638;
+}
+
+.footer__top {
+    padding: 100px 0;
+}
+
+.footer__inner {
+    display: flex;
+}
+
+.footer__item-title {
+    padding-bottom: 10px;
+}
+
+.footer__item--1 {
+    width: 550px;
+}
+
+.footer__item--2 {
+    width: 530px;
+}
+
+.footer__item--3 {
+    width: 340px;
+}
+
+.footer__item--4 {
+    margin-left: 60px;
+}
+
+.footer__item-form {
+    display: flex;
+}
+
+.footer__item-form-input {
+    width: 100%;
+    height: 40px;
+    font-size: 14px;
+    outline: none;
+    border: none;
+    border: 1px solid #000;
+    background-color: #e8e8e8;
+}
+
+.footer__item-form-input::placeholder {
+    color: #000;
+    padding-left: 10px;
+}
+
+.footer__item-form-button {
+    font-size: 14px;
+    width: 100px;
+    height: 40px;
+    color: #fff;
+    background-color: #343638;
+    border: none;
+    transition: all 0.5s;
+}
+
+.footer__item-form-button:hover {
+    background-color: #fff;
+    color: #343638;
+}
+
+.footer__item-text {
+    color: #9e9e9e;
+}
+
+.footer__item-text-hours {
+    padding-top: 5px;
+    color: #e8e8e8;
+}
+
+.footer__item-text--2 {
+    font-style: italic;
+    font-weight: 600;
+}
+
+.footer__bottom {
+    display: flex;
+    justify-content: space-between;
+    border-top: 2px solid #f3f3f3;
+    padding: 20px 0;
+}
+
+.footer__bottom-text {
+    color: #9e9e9e;
+}
+
+.footer__menu-list {
+    display: flex;
+    justify-content: center;
+    font-size: 14px;
+}
+
+.footer__menu-list--link {
+    color: #000;
+    padding-right: 25px;
+    transition: all 0.5s;
+}
+
+.footer__menu-list--link:hover {
+    color: aqua;
+}
+
+@media (max-width: 1150px) {
+    .main__blog {
+        padding-top: 100px;
+    }
+    .footer__top {
+        padding: 50px 0;
+    }
+    .footer__inner {
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+    .footer__item--1,
+    .footer__item--2,
+    .footer__item--3,
+    .footer__item--4 {
+        width: 45%;
+        margin-bottom: 10px;
+    }
+    .footer__item--4 {
+        margin-left: 0;
+    }
+}
+
+@media (max-width: 910px) {
+    .main__text {
+        padding-top: 70px;
+        padding-bottom: 70px;
+    }
+    .main__blog {
+        padding-top: 80px;
+    }
+}
+
+@media (max-width: 800px) {
+    .main__email {
+        display: block;
+    }
+    .main__email-title {
+        padding: 0 0 10px;
+    }
+    .main__email-form {
+        width: 100%;
+        margin-left: 0;
+    }
+}
+
+@media (max-width: 700px) {
+    .footer__top {
+        padding: 10px 0 20px;
+    }
+
+    .footer__inner {
+        display: block;
+        text-align: center;
+    }
+    .footer__item--1,
+    .footer__item--2,
+    .footer__item--3,
+    .footer__item--4 {
+        width: 90%;
+        margin: 0 auto;
+        margin-bottom: 20px;
+        border-bottom: 1px solid #c9c9c9;
+    }
+    .footer__item-form-input,
+    .footer__item-form-button {
+        margin-top: 20px;
+    }
+}
+
+@media (max-width: 610px) {
+    .header__top {
+        display: block;
+        text-align: center;
+    }
+    .header__logo-text {
+        font-size: 16px;
+        padding-bottom: 20px;
+    }
+    .header__center-bottom {
+        margin-top: 80px;
+        padding-bottom: 50px;
+    }
+    .header__title {
+        font-size: 36px;
+    }
+    .header__button {
+        margin-top: 80px;
+    }
+    .main__text {
+        display: block;
+        padding: 50px 0 50px;
+    }
+    .main__text-left,
+    .main__text-right {
+        width: auto;
+        text-align: center;
+        margin: 20px 0;
+    }
+    .main__blog {
+        padding-top: 50px;
+    }
+    .main__blog-title {
+        padding-bottom: 25px;
+    }
+    .main__blog-item {
+        flex-direction: column;
+        border: 5px solid #c9c9c9;
+        padding-bottom: 0;
+        margin: 20px 0;
+    }
+    .main__blog-box--img {
+        width: 100%;
+    }
+    .main__blog-img {
+        height: 250px;
+    }
+    .main__blog-box--text {
+        width: 100%;
+        margin: 1% 0;
+    }
+    .main__email-form-input {
+        height: 40px;
+    }
+    .main__email-form-button {
+        height: 40px;
+        color: #fff;
+    }
+    .footer__bottom {
+        flex-direction: column-reverse;
+        text-align: center;
+        padding: 10px 0;
+    }
+    .footer__bottom-text {
+        margin-top: 10px;
+    }
+    .footer__menu-list {
+        display: flex;
+        justify-content: space-around;
+        width: 90%;
+        margin: 0 auto;
+    }
+    .footer__menu-list--link {
+        padding-right: 0;
+    }
+}
+
+@media (max-width: 530px) {
+    .header__center-bottom {
+        margin-top: 50px;
+        padding-bottom: 40px;
+    }
+    .header__title {
+        font-size: 24px;
+    }
+    .header__title-span {
+        font-size: 38px;
+    }
+    .header__title-text {
+        font-size: 12px;
+        padding-top: 10px;
+    }
+    .header__button {
+        margin-top: 50px;
+    }
+}
+
+@media (max-width: 430px) {
+    .header__center-bottom {
+        margin-top: 50px;
+        padding-bottom: 40px;
+    }
+    .header__title {
+        font-size: 22px;
+        letter-spacing: 5px;
+    }
+    .header__title-span {
+        font-size: 26px;
+    }
+    .header__button {
+        margin-top: 50px;
+    }
+    .header__button:hover {
+        width: 260px;
+    }
+    .main__text-left {
+        font-size: 18px;
+    }
+    .main__text {
+        padding: 30px 0 30px;
+    }
+    .main__blog-title {
+        padding-bottom: 10px;
+    }
+    .main__blog-img {
+        height: 200px;
+    }
+    .main__email-title {
+        font-size: 18px;
+    }
+    .main__email-form {
+        display: block;
+    }
+    .main__email-form-button {
+        margin-top: 15px;
+    }
+}
+
+@media (max-width: 380px) {
+    .header__menu-list--link {
+        padding-right: 20px;
+    }
+    .main__email-title {
+        min-width: 0;
+    }
+}
